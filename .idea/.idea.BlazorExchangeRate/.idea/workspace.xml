@@ -6,8 +6,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="449d7eb3-e5d7-4f4c-965d-c78fbaea484d" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/BlazorExchangeRate/Services/ExchangeCurrencyService.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BlazorExchangeRate/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/BlazorExchangeRate/Program.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.BlazorExchangeRate/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.BlazorExchangeRate/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BlazorExchangeRate/DTO/ExchangeRateResultDTO.cs" beforeDir="false" afterPath="$PROJECT_DIR$/BlazorExchangeRate/DTO/ExchangeRateResultDTO.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BlazorExchangeRate/Services/ExchangeCurrencyService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/BlazorExchangeRate/Services/ExchangeCurrencyService.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -72,7 +73,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1668485955671</updated>
-      <workItem from="1668485956691" duration="713000" />
+      <workItem from="1668485956691" duration="1349000" />
     </task>
     <servers />
   </component>
