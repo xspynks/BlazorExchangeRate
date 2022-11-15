@@ -6,6 +6,45 @@
 
 <h1>Converting USD to BRL</h1>
 
+<div class="row g-2 align-items-center">
+    <div class="col-sm-7">
+        <label class="sr-only">Value in dollar</label>
+        <div class="input-group mb-2 mr-sm-2">
+            <div class="input-group-prepend">
+                <div class="input-group-text">$</div>
+            </div>
+            <input @bind-value="UsdValue" type="number" class="form-control" />
+        </div>
+        <div class="col-sm">
+            <button @onclick="ConvertToBrl" disabled="@IsLoading" style="margin-top: 15px" class="btn btn-primary">
+                Convert to BRL
+            </button>
+        </div>
+    </div>
+</div>
+
+@if (IsLoading)
+{
+    <div class="alert alert-secondary">
+        Loading...
+    </div>
+}
+else
+{
+    if (BrlValue.HasValue)
+    {
+        <div style="font-size: 40px" class="alert-success">
+            <div style="text-align: center;" >Total in BRL: R$@BrlValue?.ToString("0.##")</div>
+        </div>
+    }
+}
+
+@if (string.IsNullOrWhiteSpace(ErrorMessage) is false)
+{
+    <div class="alert alert-danger">
+        @ErrorMessage
+    </div>
+}
 
 
 @code {
@@ -16,7 +55,7 @@
 
     async Task ConvertToBrl()
     {
-        if (UsdValue is null || UsdValue <= 0)
+        if (UsdValue is null or <= 0)
         {
             BrlValue = null;
             ErrorMessage = "The value in dollar must be greater than 0.";
@@ -30,7 +69,7 @@
         StateHasChanged();
         try
         {
-            BrlValue = await ExchangeCurrencyService.ConvertUsdToBrl(UsdValue.Value)
+            BrlValue = await ExchangeCurrencyService.ConvertUsdToBrl(UsdValue.Value);
             ErrorMessage = string.Empty;
         }
         catch(Exception ex)
