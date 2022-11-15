@@ -1,9 +1,50 @@
 ﻿@page "/"
 
-<PageTitle>Index</PageTitle>
+@inject BlazorExchangeRate.Services.IExchangeCurrencyService ExchangeCurrencyService
 
-<h1>Hello, world!</h1>
+<PageTitle>Exchange Rate (USD to BRl)</PageTitle>
 
-Welcome to your new app.
+<h1>Converting USD to BRL</h1>
 
-<SurveyPrompt Title="How is Blazor working for you?"/>
+
+
+@code {
+    bool IsLoading;
+    double? UsdValue;
+    double? BrlValue;
+    string ErrorMessage;
+
+    async Task ConvertToBrl()
+    {
+        if (UsdValue is null || UsdValue <= 0)
+        {
+            BrlValue = null;
+            ErrorMessage = "The value in dollar must be greater than 0.";
+            StateHasChanged();
+            return;
+        }
+    
+        ErrorMessage = string.Empty;
+        IsLoading = true;
+        BrlValue = null;
+        StateHasChanged();
+        try
+        {
+            BrlValue = await ExchangeCurrencyService.ConvertUsdToBrl(UsdValue.Value)
+            ErrorMessage = string.Empty;
+        }
+        catch(Exception ex)
+        {
+            ErrorMessage = ex.Message;
+        }
+        finally
+        {
+            IsLoading = false;
+            StateHasChanged();
+
+        }
+    }
+}
+
+
+
