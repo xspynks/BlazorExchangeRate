@@ -4,6 +4,6 @@ namespace BlazorExchangeRate.DTO;
 
 public class ExchangeRateResultDTO
 {
-    [JsonPropertyName("converstion_rates")]
+    [JsonPropertyName("conversion_rates")]
     public Dictionary<string, double> Rates { get; set; }
 }
