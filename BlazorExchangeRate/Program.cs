@@ -16,4 +16,6 @@ builder.Services.AddScoped(sp => new HttpClient { BaseAddress = new Uri(builder.
 
 builder.Services.AddHttpClient(nameof(ExchangeCurrencyService), client => client.BaseAddress = new Uri("https://v6.exchangerate-api.com/"));
 
+builder.Services.AddScoped<IExchangeCurrencyService, ExchangeCurrencyService>();
+
 await builder.Build().RunAsync();

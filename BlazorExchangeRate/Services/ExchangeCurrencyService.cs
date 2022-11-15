@@ -4,7 +4,7 @@ using BlazorExchangeRate.DTO;
 
 namespace BlazorExchangeRate.Services;
 
-public class ExchangeCurrencyService
+public class ExchangeCurrencyService : IExchangeCurrencyService
 {
     private readonly HttpClient httpCLient;
     private readonly ExchangeRateApiConfig exchangeRateApiConfig;
