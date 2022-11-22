@@ -5,9 +5,7 @@
     <projectFile profileName="IIS Express">BlazorExchangeRate/BlazorExchangeRate.csproj</projectFile>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="449d7eb3-e5d7-4f4c-965d-c78fbaea484d" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.BlazorExchangeRate/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.BlazorExchangeRate/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="449d7eb3-e5d7-4f4c-965d-c78fbaea484d" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -86,7 +84,7 @@
       <workItem from="1668485956691" duration="4690000" />
       <workItem from="1668908108660" duration="100000" />
       <workItem from="1668908319066" duration="1320000" />
-      <workItem from="1669094558125" duration="1411000" />
+      <workItem from="1669094558125" duration="1791000" />
     </task>
     <servers />
   </component>
