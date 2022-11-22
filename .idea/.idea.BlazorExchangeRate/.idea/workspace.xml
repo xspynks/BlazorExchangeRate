@@ -6,7 +6,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="449d7eb3-e5d7-4f4c-965d-c78fbaea484d" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/BlazorExchangeRate.sln" beforeDir="false" afterPath="$PROJECT_DIR$/BlazorExchangeRate.sln" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.BlazorExchangeRate/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.BlazorExchangeRate/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -86,7 +86,7 @@
       <workItem from="1668485956691" duration="4690000" />
       <workItem from="1668908108660" duration="100000" />
       <workItem from="1668908319066" duration="1320000" />
-      <workItem from="1669094558125" duration="2263000" />
+      <workItem from="1669094558125" duration="3386000" />
     </task>
     <servers />
   </component>
